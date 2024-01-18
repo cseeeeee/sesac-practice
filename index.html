@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      p {
+        background-color: yellow;
+        text-align: center;
+      }
+      /* 
+      id와 class 중 id가 우선 적용
+      id는 하나만 적용한다고 생각하고 class는 여러개가 적용된다고 가정
+      -> id의 범위가 좁기 때문에(지역변수로 설명하심)
+      */
+      .special {
+        background-color: aquamarine;
+      }
+
+      p.thank{
+        background-color: cadetblue;
+      }
+
+      #introduce {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="thank">hi</p>
+    <p id="introduce">hi</p>
+    <p class="special">hi</p>
+    <h1 class="special">hello</h1>
+    <p>hi</p>
+    <p>hi</p>
+
+  </body>
+</html>
